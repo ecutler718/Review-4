@@ -10,20 +10,20 @@ Pizza.prototype.price = function() {
 	var pizzaPrice = 10;
 
 	if (
-		this.size === "small" ||
-		this.size === "medium" ||
-		this.size === "large" ||
-		this.size === "xlarge"
+		this.size === "Small" ||
+		this.size === "Medium" ||
+		this.size === "Large" ||
+		this.size === "Xlarge"
 		) {
 		pizzaPrice += 4;
-	} else if (this.size === "slice") {
+	} else if (this.size === "Slice") {
 		pizzaPrice += 0;
 	}
 
 
-	if (this.cheese === "real" ) {
+	if (this.cheese === "Real Cheese" ) {
 		pizzaPrice += 3;
-	} else if (this.cheese ==="vegan") {
+	} else if (this.cheese ==="Vegan Cheese") {
 		pizzaPrice += 0;
 	}
 
